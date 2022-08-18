@@ -1,0 +1,52 @@
+
+
+/* barra lateral */
+.modal {
+  width: 300px;
+}
+
+.modal-content {
+  width: 300px;
+}
+
+.list-group-item:hover {
+  background-color: rgb(45, 57, 57, 0.164);
+}
+/* barra lateral */
+
+.fundo-verde {
+  background-color: rgb(227, 230, 243);
+}
+.titulos-paginas {
+  width: 100%;
+  padding: 20px;
+  background:  rgb(176, 180, 197);
+}
+
+.container { 
+  margin: 1%; 
+  padding:2.5%;
+  margin: 1%  18%;
+  border-radius: 25px;
+}
+
+.btns{
+  display: flex;
+  justify-content:center;
+ 
+}
+
+.btn{
+  margin: 10px;
+}
+.drop-shadow{
+  filter: drop-shadow(10px 0px 4px #00000056);
+}
+
+.no-select{
+  user-select: none;
+}
+
+.form-group{
+ margin-top: 2%;
+}
