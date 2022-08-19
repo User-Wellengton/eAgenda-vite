@@ -18,14 +18,14 @@
 
     
 
-    <title>Cadastrar Tarefa</title>
+    <title>Cadastrar Conatato</title>
 
 
-  <script type="module" crossorigin src="/eAgenda-vite/assets/tarefaCreate.ab048837.js"></script>
+  <script type="module" crossorigin src="/eAgenda-vite/assets/contatoCreate.7304da17.js"></script>
   <link rel="modulepreload" crossorigin href="/eAgenda-vite/assets/style.c0ed6924.js">
   <link rel="modulepreload" crossorigin href="/eAgenda-vite/assets/guid.model.16afb711.js">
   <link rel="modulepreload" crossorigin href="/eAgenda-vite/assets/entidade.model.7c8b214e.js">
-  <link rel="modulepreload" crossorigin href="/eAgenda-vite/assets/tarefa.repository.local-Storage.68d09636.js">
+  <link rel="modulepreload" crossorigin href="/eAgenda-vite/assets/contato.repository.local-Storage.776f4bbd.js">
   <link rel="stylesheet" href="/eAgenda-vite/assets/style.37e45232.css">
 </head>
 
@@ -55,19 +55,18 @@
                     <ul class="list-group list-group-flush fundo-verde">
 
                         <li class="list-group-item fundo-verde">
-                            <a href="..//index.html" class="btn btn-outline-dark custom-botao-menu" role="button"
+                            <a href="../index.html" class="btn btn-outline-dark custom-botao-menu" role="button"
                                 aria-pressed="true">Inicio</a>
                         </li>
 
                         <li class="list-group-item fundo-verde">
-                            <a href="./tarefa.list.html" class="btn btn-outline-dark custom-botao-menu" role="button"
-                                aria-pressed="true">Tarefa</a>
+                            <a href="../tarefas/tarefa.list.html" class="btn btn-outline-dark custom-botao-menu"
+                                role="button" aria-pressed="true">Tarefa</a>
                         </li>
                         <li class="list-group-item fundo-verde">
-                            <a href="../contatos/contato.list.html" class="btn btn-outline-dark  custom-botao-menu"
-                                role="button" aria-pressed="true">Contato</a>
+                            <a href="./contato.list.html" class="btn btn-outline-dark  custom-botao-menu" role="button"
+                                aria-pressed="true">Contato</a>
                         </li>
-
                     </ul>
 
 
@@ -86,7 +85,7 @@
     <!-- INPUTS COMEÇO -->
 
     <p>
-    <h3 class="text-center titulos-paginas">Cadastrar Tarefas</h3>
+    <h3 class="text-center titulos-paginas">Cadastrar Contato</h3>
     </p>
 
 
@@ -95,43 +94,38 @@
             <section id="cabecalho">
                 <header>
 
-                    <p class="fs-5 mt-3  fw-semibold">Cadastre suas tarefas diárias por prioridade.</p>
+                    <p class="fs-5 mt-3  fw-semibold">Cadastre seus contatos.</p>
                 </header>
                 <div class="card  border-secondary p-0 p-md-2 mt-4 d-flex">
                     <div class="card-body p-5">
                         <form class="form  mt-3" id="formulario">
 
                             <div class="form-group">
-                                <label class="form-label fs-5" for="txtDescricao">Descrição</label>
-                                <input id="txtDescricao" class="form-control" type="text"
-                                    placeholder="Descrição da sua tarefa">
+                                <label class="form-label fs-5" for="txtDescricao">Nome</label>
+                                <input id="txtNome" class="form-control" type="text" placeholder="Nome">
                             </div>
 
-                            <div class="form-group mt-4">
-                                <label class="form-label fs-5" for="rdbPrioridade">Prioridade</label>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" value="Baixa" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1" checked>
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Baixa
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" value="Média" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2">
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        Média
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" value="Alta" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2">
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        Alta
-                                    </label>
-                                </div>
+                            <div class="form-group">
+                                <label class="form-label fs-5" for="txtDescricao">Email</label>
+                                <input id="txtEmail" class="form-control" type="email" placeholder="fulano@email.com">
                             </div>
+
+                            <div class="form-group">
+                                <label class="form-label fs-5" for="txtDescricao">Telefone</label>
+                                <input id="txtTelefone" class="form-control" type="number" placeholder="(xx)999999999">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label fs-5" for="txtDescricao">Empresa</label>
+                                <input id="txtEmpresa" class="form-control" type="text" placeholder="Empresa">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label fs-5" for="txtDescricao">Cargo</label>
+                                <input id="txtCargo" class="form-control" type="text" placeholder="Cargo">
+                            </div>
+
+
                         </form>
                     </div>
                     <div class="card-footer px-3 text-center text-md-end">
